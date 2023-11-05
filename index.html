@@ -5,18 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  My balance
+
+      <main>
+          <div class="main-container">
+              <div class="balance">
+                <div class="balance-amount">
+                  <p>My balance</p>
+                  <h1>$921.48</h1>
+                </div>
+                <div class="img-container"><img src="./images/logo.svg" alt="logo"></div>
+              </div>
+            
+              <div class="chart-section">
+                <h2>Spending - Last 7 days</h2>
+
+                <div class="chart">
+                  <canvas id="myChart" ></canvas>
+                </div>
+
+
+
+              </div>
+
+              <div class="total-balance">
+
+
+              </div>
+
+
+
+
+
+
+
+          </div>
+
+      </main>
+
+
+  <!-- My balance
   $921.48
 
   Spending - Last 7 days
@@ -33,11 +66,14 @@
   $478.33
 
   +2.4%
-  from last month
+  from last month -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="index.js"></script>
+ 
 </body>
 </html>
