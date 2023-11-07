@@ -14,6 +14,9 @@
 
       <main>
           <div class="main-container">
+
+
+            <!-- current balance section -->
               <div class="balance">
                 <div class="balance-amount">
                   <p>My balance</p>
@@ -21,26 +24,27 @@
                 </div>
                 <div class="img-container"><img src="./images/logo.svg" alt="logo"></div>
               </div>
-            
+
+
+                <!-- chart canvas here  -->
               <div class="chart-section">
-                    <h2>Spending - Last 7 days</h2>
-
-
-                    <!-- chart canvas here  -->
+                <h2>Spending - Last 7 days</h2>
                 <div class="chart">
                   <canvas id="myChart" ></canvas>
                 </div>
-                  <!-- chart canvas closes here  -->
+                <!-- chart canvas closes here  -->
+
+
+                <!-- total balance amount  -->
                 <div class="total-balance">
-                
                   <div class="total-balance-amount">
                     <p>Total this month</p>
                     <h1 id="total-expense">$478.33</h1>
                   </div>
                 
                   <div class="total-balance-percentage">
-                    <span id="percentage"><b>+2.4%</b></span>
-                    <p>from last month</p>
+                    <span id="percentage"><b></b></span>
+                    <p>of total balance</p>
                   </div>
                 </div>
 
@@ -57,32 +61,6 @@
           </div>
 
       </main>
-
-
-  <!-- My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-
   <script src="index.js"></script>
  
 </body>

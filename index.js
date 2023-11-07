@@ -10,10 +10,12 @@ fetch("./data.json")
         // Get the total expense and my balance
         const expenseEl = document.getElementById('total-expense');
         const myBalanceEl = document.getElementById('my-balance');
+        const percentageEl = document.getElementById('percentage');
         const startingBalance = 921.48;
         const totalExpense = amount.reduce((total, curr) => total + curr);
         myBalanceEl.innerText = `$${startingBalance - totalExpense}`;
         expenseEl.innerText = `$${totalExpense}`;
+        percentageEl.innerText = `${Math.round((totalExpense / startingBalance) * 100)}%`;
 
         // Custom background color for the bar chart
         const customBackgroundColor = amount.map(value => {
@@ -109,10 +111,6 @@ fetch("./data.json")
         });
 
     });
-
-
-//chartMain.defaults.scale.gridLines.drawOnChartArea = false;
-//const ctx = document.getElementById('myChart');
 
 
 
