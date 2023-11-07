@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here]()
+- Solution URL: [solution URL here](https://github.com/mesganaG/expense-chart-component)
 - Live Site URL: [live site URL here](https://mesganag.github.io/expense-chart-component/)
 
 ## My process
